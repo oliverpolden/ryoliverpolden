@@ -1,0 +1,23 @@
+{{ attach_library('uikitty/search') }}
+
+<div class="ih-topbar">
+    <div class="uk-container uk-container-center">
+        <nav class="uk-navbar uk-navbar-attached uk-contrast">
+            <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+            {{ page.primary_menu }}
+            <div class="uk-navbar-content ">
+               
+            </div>
+            <div class="uk-navbar-flip">
+				<div class="uk-navbar-content ih-sitesearch uk-contrast">
+                    <form class="uk-search" data-uk-search>
+                        <input class="uk-search-field" type="search" placeholder="">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+</div>
+

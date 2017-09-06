@@ -54,7 +54,7 @@
 
 {% include directory ~ '/templates/includes/header.html.twig' %}
 
-<div class="ih-header-container ds-darkbgs uk-cover-background"{% if node.field_image.entity.uri %} style="background-image:url({{ file_url(node.field_image.entity.uri.value) }});"{% endif %}>
+<div class="ih-header-container ds-darkbgs uk-cover-background"{% if node.field_image.entity.uri %} style="background-image:url({{ node.field_image.entity.uri.value | image_style('max_1300x1300') }});"{% endif %}>
 <div class="bx-bk-overlay">
 	<div class="uk-container uk-container-center">
 		<div class="uk-grid">

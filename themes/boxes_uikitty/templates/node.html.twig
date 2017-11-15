@@ -90,9 +90,10 @@
     {% if display_submitted %}
       <div class="node__meta">
         {{ author_picture }}
-        <span{{ author_attributes }}>
-          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        </span>
+        <h3 {{ author_attributes }}>
+          {% set createdDate = node.getCreatedTime|date('l \\t\\h\\e jS F Y') %}
+          {{ createdDate }}
+        </h3>
         {{ metadata }}
       </div>
     {% endif %}
